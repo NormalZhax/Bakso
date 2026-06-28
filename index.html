@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ozi & Kaiela Anniversary</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+  <div class="question-page" id="questionPage">
+    <div class="question-card">
+      <div class="heart-icon">&#9829;</div>
+      <h2>Kamu sayang aku ngga?</h2>
+      <div class="btn-container">
+        <button onclick="pilihSayang()" id="btnSayang">Sayang bingitz</button>
+        <button onmouseover="pindahTombol()" onclick="pindahTombol()" id="btnEngga">Engga</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="envelope hidden" id="envelope">
+    <div class="card">
+      <h1>A Special Gift dari akuhh</h1>
+      <p>For Kaiela</p>
+      <p>Maap kalo jelek :<</p>
+      <button onclick="openGift()">Buka Hadiahnya Woy</button>
+    </div>
+  </div>
+
+  <div class="main hidden" id="main">
+    <h1>Happy 1st Anniversary</h1>
+    <h2>Ozi Kaiela</h2>
+    
+    <audio id="myAudio" src="lagu.mp3" loop></audio>
+
+    <button onclick="toggleMusic(this)" class="btn-music">Pause Music</button>
+      
+    <div class="counter" id="counter"></div>
+
+    <div class="gallery">
+      <img src="foto1.jpg" width="200" alt="Foto 1" onclick="zoomFoto(1)">
+      <img src="foto2.jpg" width="200" alt="Foto 2" onclick="zoomFoto(2)">
+    </div>
+
+    <div class="memory-container">
+      <a href="https://sendthesong.xyz/details/677152b3813cb3367ba4ba79" target="_blank" class="btn-memory">
+        masih inget ini ga? :> (click)
+      </a>
+    </div>
+
+    <div class="letter">
+      <h3>Dear Kaiela</h3>
+      <p>
+        Happy 1st Anniversary sayang bububkuu.<br><br>
+        Nggak kerasa kita sudah satu tahun bareng. Makasih yah udah menerima aku apa adanya dan tetap mau bertahan sampai sekarang.<br><br>
+        Maap yahh kalo aku masih banyak kurangnya, tapi aku usahain kok bakal terus berusaha jadi lebih baik untuk kita berdua.<br><br>
+        Semoga kita bisa terus bersama melewati banyak rintangan dengan sukaduka dan bikin banyak kenangan lagi.<br><br>
+        <strong>Love you Kaiela ^-^ </strong><br>        
+        <span class="signature">- Ozi</span>
+      </p>
+    </div>
+
+    <div class="end">
+      <h2>29 Juni 2025 </h2>
+      <p>Special Thanks To Kaiela</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
